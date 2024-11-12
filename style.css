@@ -15,11 +15,13 @@
   /* Encabezado */
   header {
     background-color: white;
-    border-bottom: 1px solid #ddd;
     padding: 1rem 2rem;
     display: flex;
     align-items: center; 
     justify-content: space-between;
+    background-image: url("imagenes/cielo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .header-content {
@@ -59,7 +61,7 @@
   padding: 10px;
   background-color: #ff5400;
   border: 1px solid #ddd;
-  border-radius: 50px;
+  border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -82,12 +84,6 @@
 .search-bar button:hover {
   background-color: #ff4500;
 }
-
-/* Media Query para pantallas pequeñas */
-
-
-
-  
   /* Categorías */
   .categories {
     display: flex;
@@ -156,7 +152,6 @@ body {
 
 header {
   background-color: #f5f5f5;
-  padding: 1rem 0;
 }
 
 .header-content {
@@ -165,7 +160,7 @@ header {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 10rem 1rem;
 }
 
 .logo img {
@@ -197,45 +192,3 @@ nav a {
   cursor: pointer;
 }
 
-/* Estilo para la barra de búsqueda */
-.search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-    background-color: #ff5400;
-    border: 1px solid #ddd;
-    border-radius: 50px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .search-bar input,
-  .search-bar button {
-    border: none;
-    outline: none;
-    padding: 10px 15px;
-    border-radius: 25px;
-    font-size: 16px;
-  }
-  
-  .search-bar input {
-    flex: 1;
-    background-color: #f9f9f9;
-  }
-  
-  .search-bar input[type="text"] {
-    flex: 2;
-  }
-  
-  .search-bar button {
-    background-color: #ff5400;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .search-bar button:hover {
-    background-color: #ff5400;
-  }
-  
-/*--------------------------------------------*/
