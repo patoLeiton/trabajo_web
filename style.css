@@ -19,6 +19,9 @@
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
+    background-image: url("imagenes/F8vLuLgXMAAJfSJ.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
   .header-content {
