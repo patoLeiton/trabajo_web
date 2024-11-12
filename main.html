@@ -8,19 +8,17 @@
   <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Encabezado -->
   <header>
     <div class="header-content">
-      <h1>Stays BA</h1>
       <div class="logo"> 
         <img src= "imagenes/Copia de Logo Hotel Boutique Alojamiento Playa Líneas Moderno Estético Verde Beige.png" alt= "Logo">
-        
+        <h1>Stays BA</h1>
       </div>
-      
       <nav>
         <a href="#">Alojamientos</a>
         <a href="#">Experiencias</a>
@@ -37,19 +35,20 @@
   <section class="search-bar">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-md-3 mb-1 mb-sm-2">
+        <!-- Usamos clases responsive de Bootstrap para los inputs -->
+        <div class="col-12 col-sm-7 col-md-3 col-lg-3 mb-3 mb-sm-2">
           <input type="text" class="form-control" placeholder="Lugar"/>
         </div>
-        <div class="col-md-2 mb-1 mb-sm-2">
+        <div class="col-12 col-sm-7 col-md-2 col-lg-3 mb-3 mb-sm-2">
           <input type="date" class="form-control" placeholder="Check-in"/>
         </div>
-        <div class="col-md-2 mb-1 mb-sm-2 ">
+        <div class="col-12 col-sm-7 col-md-2 col-lg-3 mb-3 mb-sm-2">
           <input type="date" class="form-control" placeholder="Check-out"/>
         </div>
-        <div class="col-md-2 col-sm-9 mb-1 mb-sm-2">
+        <div class="col-12 col-sm-7 col-md-2 col-lg-3 mb-3 mb-sm-2">
           <input type="number" class="form-control" placeholder="Viajeros" min="1"/>
         </div>
-        <div class="col-sm-2">
+        <div class="col-12 col-sm-5 col-md-2 col-lg-1">
           <button class="btn w-100">Buscar</button>
         </div>
       </div>
