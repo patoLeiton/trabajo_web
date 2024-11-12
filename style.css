@@ -33,6 +33,9 @@
   
   .logo img {
     height: 30px;
+    position: relative; /* o 'fixed' si quieres que permanezca fijo al hacer scroll */
+    top: -100px; /* Ajusta el valor para moverlo hacia arriba o hacia abajo */
+    left: 0px; /* O cualquier valor de desplazamiento horizontal */
   }
   
   nav a {
@@ -41,11 +44,20 @@
     color: black;
     font-weight: bold;
   }
+
+  .staysba{
+    position: relative; /* o 'fixed' si quieres que permanezca fijo al hacer scroll */
+    top: -90px; /* Ajusta el valor para moverlo hacia arriba o hacia abajo */
+    left: 0px; /* O cualquier valor de desplazamiento horizontal */
+  }
   
   .user-options {
     display: flex;
     align-items: center;
     gap: 1rem;
+    position: relative; /* o 'fixed' si quieres que permanezca fijo al hacer scroll */
+    top: -100px; /* Ajusta el valor para moverlo hacia arriba o hacia abajo */
+    left: 0px; /* O cualquier valor de desplazamiento horizontal */
   }
   
   .user-icon {
@@ -55,15 +67,10 @@
   }
   
   /* Barra de búsqueda */
-  /* Barra de búsqueda */
 .search-bar {
   gap: 10px;
   padding: 10px;
   background-color: #ff5400;
-  border: 1px solid #ddd;
-  border-radius: 25px;
-  margin-right: 25px;
-  margin-left: 25px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
