@@ -58,7 +58,7 @@
   padding: 10px;
   background-color: #ff5400;
   border: 1px solid #ddd;
-  border-radius: 50px;
+  border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -195,45 +195,3 @@ nav a {
   cursor: pointer;
 }
 
-/* Estilo para la barra de búsqueda */
-.search-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 10px;
-    background-color: #ff5400;
-    border: 1px solid #ddd;
-    border-radius: 50px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .search-bar input,
-  .search-bar button {
-    border: none;
-    outline: none;
-    padding: 10px 15px;
-    border-radius: 25px;
-    font-size: 16px;
-  }
-  
-  .search-bar input {
-    flex: 1;
-    background-color: #f9f9f9;
-  }
-  
-  .search-bar input[type="text"] {
-    flex: 2;
-  }
-  
-  .search-bar button {
-    background-color: #ff5400;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .search-bar button:hover {
-    background-color: #ff5400;
-  }
-  
-/*--------------------------------------------*/
