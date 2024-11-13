@@ -33,41 +33,45 @@ header {
     
 .logo img {
     height: 30px;
-}
-    
-.logo h1 {
-    color: #ff5400;
-}
-
-nav a {
+    position: relative; /* o 'fixed' si quieres que permanezca fijo al hacer scroll */
+    top: -100px; /* Ajusta el valor para moverlo hacia arriba o hacia abajo */
+    left: 0px; /* O cualquier valor de desplazamiento horizontal */
+  }
+  
+  nav a {
     margin: 0 1rem;
     text-decoration: none;
     color: black;
     font-weight: bold;
-}
-    
-.user-options {
+  }
+
+  .staysba{
+    position: relative; /* o 'fixed' si quieres que permanezca fijo al hacer scroll */
+    top: -90px; /* Ajusta el valor para moverlo hacia arriba o hacia abajo */
+    left: 0px; /* O cualquier valor de desplazamiento horizontal */
+  }
+  
+  .user-options {
     display: flex;
     align-items: center;
     gap: 1rem;
-}
-    
-.user-icon {
+    position: relative; /* o 'fixed' si quieres que permanezca fijo al hacer scroll */
+    top: -100px; /* Ajusta el valor para moverlo hacia arriba o hacia abajo */
+    left: 0px; /* O cualquier valor de desplazamiento horizontal */
+  }
+  
+  .user-icon {
     background-color: #ddd;
     padding: 0.5rem;
     border-radius: 50%;
-}
-
-/* Barra de búsqueda */
+  }
+  
+  /* Barra de búsqueda */
 .search-bar {
-    gap: 10px;
-    padding: 10px;
-    background-color: #ff5400;
-    border: 1px solid #ddd;
-    border-radius: 20px;
-    margin-right: 30px;
-    margin-left: 30px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  gap: 10px;
+  padding: 10px;
+  background-color: #ff5400;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar input,
