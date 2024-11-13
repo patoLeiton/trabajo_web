@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
   <!-- Encabezado -->
@@ -163,4 +164,32 @@
 
   <script src="script.js"></script>
 </body>
+<script>
+    $(window).on('scroll', function() {
+      var scrollPos = $(window).scrollTop();
+      $('header').css('background-position', 'center ' + (scrollPos * 0.5) + 'px');
+  });
+
+  $(document).ready(function() {
+    var barraBusqueda = $('.search-bar');
+    var encabezadoAltura = $('header').outerHeight(); // Altura del encabezado
+
+    $(window).on('scroll', function() {
+        if ($(window).scrollTop() >= encabezadoAltura) {
+          barraBusqueda.css({
+            'position': 'fixed',
+            'top': '0',
+            'width': '100%',
+            'z-index': '1000'
+          }).addClass('barra-fija'); // Añadir clase para bordes redondeados
+        } else {
+          barraBusqueda.css({
+            'position': 'relative'
+          }).removeClass('barra-fija'); // Remover clase cuando vuelve a su posición original
+        }
+      });
+    });
+
+
+</script>
 </html>

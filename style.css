@@ -19,8 +19,8 @@
     display: flex;
     align-items: center; 
     justify-content: space-between;
-    background-image: url("imagenes/cielo.jpg");
-    background-repeat: no-repeat;
+    background-image: url("imagenes/collage.jpg");
+    background-attachment: fixed;
     background-size: cover;
   }
   
@@ -49,6 +49,8 @@
     position: relative; /* o 'fixed' si quieres que permanezca fijo al hacer scroll */
     top: -90px; /* Ajusta el valor para moverlo hacia arriba o hacia abajo */
     left: 0px; /* O cualquier valor de desplazamiento horizontal */
+    color: #ff5400;
+    text-shadow: 2px 2px 4px rgba(60, 59, 59, 0.5);
   }
   
   .user-options {
@@ -72,7 +74,25 @@
   padding: 10px;
   background-color: #ff5400;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+/* Estilo cuando la barra es fija y más pequeña */
+.barra-fija {
+  padding: 8px; /* Reducir padding para hacer la barra más pequeña */
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos más pequeños cuando la barra es fija */
+.barra-fija input, .barra-fija button {
+  padding: 5px;
+  font-size: 0.9rem; /* Reducir el tamaño de fuente */
+}
+
 
 .search-bar input,
 .search-bar button {
@@ -81,6 +101,8 @@
   padding: 10px 15px;
   border-radius: 25px;
   font-size: 16px;
+  flex: 1;
+  transition: all 0.3s ease; /* Transición para los campos */
 }
 
 .search-bar button {
