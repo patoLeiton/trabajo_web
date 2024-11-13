@@ -8,10 +8,16 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-</script>
+  
+
+
+
+  </script>
 </head>
 <body>
   <!-- Encabezado -->
@@ -112,7 +118,7 @@
   
   <h1 class="titles">Alojamientos para vos</h1>
   <section class="listing">
-    
+    <div class="owl-carousel">
     <div class="card">
       <img src="imagenes/SanTelmo.webp" alt="Alojamiento">
       <div class="card-info">
@@ -154,7 +160,7 @@
     </div>
 
     <div class="card">
-      <img src="imagenes/" alt="Alojamiento">
+      <img src="imagenes/loftsaaverdra.webp" alt="Alojamiento">
       <div class="card-info">
         <h3>Loft a estrenar. Descubrí Saavedra!</h3>
         <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
@@ -165,7 +171,7 @@
     </div>
 
     <div class="card">
-      <img src="imagenes/madero.webp" alt="Alojamiento">
+      <img src="imagenes/casadecampo.webp" alt="Alojamiento">
       <div class="card-info">
         <h3>Casa de campo en san Isidro</h3>
         <p>Alojamiento entero en San Isidro, Argentina</p>
@@ -176,7 +182,7 @@
     </div>
 
     <div class="card">
-      <img src="imagenes/madero.webp" alt="Alojamiento">
+      <img src="imagenes/oprecoleta.webp" alt="Alojamiento">
       <div class="card-info">
         <h3>¡Oportunidad en Recoleta!</h3>
         <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
@@ -187,7 +193,7 @@
     </div>
 
     
-    
+    </div>
   </section>
 
 
@@ -236,7 +242,7 @@
 
 
     <div class="card">
-      <img src="imagenes/deptoalto.webp" alt="Alojamiento">
+      <img src="imagenes/bohemiansanisidro.webp" alt="Alojamiento">
       <div class="card-info">
         <h3>Rincón bohemio en San Isidro</h3>
         <p>Minicasa en San Isidro, Argentina</p>
@@ -245,15 +251,8 @@
       </div>
     </div>
 
-    <div class="card">
-      <img src="imagenes/deptoalto.webp" alt="Alojamiento">
-      <div class="card-info">
-        <h3>Moderno y luminioso studio en Recoleta con piscina</h3>
-        <p>Departamento en complejo residencial entero en Buenos Aires, Argentina</p>
-        <p>18 al 23 de nov.</p>
-        <p><del>$36</del> $30 USD / noche</p>
-      </div>
-    </div>
+    
+  
 
     <div class="card">
       <img src="imagenes/deptoalto.webp" alt="Alojamiento">
@@ -272,7 +271,7 @@
    <section class="listing">
     
     <div class="card">
-      <img src="imagenes/luminosa.webp" alt="Alojamiento">
+      <img src="imagenes/petitatelier.webp" alt="Alojamiento">
       <div class="card-info">
         <h3>Petit Atelier Puerto Eclipse</h3>
         <p>Minicasa en Tigre, Argentina</p>
@@ -282,7 +281,7 @@
       </div>
     </div>
     <div class="card">
-      <img src="imagenes/centroluminoso.webp" alt="Alojamiento">
+      <img src="imagenes/karku.webp" alt="Alojamiento">
       <div class="card-info">
         <h3>Casita flotante Karkú</h3>
         <p>Casa flotante en San Fernando, Argentina</p>
@@ -293,7 +292,7 @@
     </div>
 
     <div class="card">
-      <img src="imagenes/microcentro.webp" alt="Alojamiento">
+      <img src="imagenes/cabaña delta.webp" alt="Alojamiento">
       <div class="card-info">
         <h3>Cabaña Madreselva inmersa en el Delta del Tigre</h3>
         <p>Cabaña entero en Arroyo Abra Vieja, Argentina</p>
@@ -304,7 +303,7 @@
     </div>
 
     <div class="card">
-      <img src="imagenes/deptoalto.webp" alt="Alojamiento">
+      <img src="imagenes/cada deltasobre rio.webp" alt="Alojamiento">
       <div class="card-info">
         <h3>Casa en el Delta Sobre el Río San Antonio Tigre</h3>
         <p>Alojamiento entero en Tigre, Argentina</p>
@@ -321,6 +320,9 @@
   <!-- Pie de página -->
   <footer>
     <p>&copy; 2024 StaysBA - Todos los derechos reservados</p>
+
+    <script src="jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
   </footer>
 
   <script src="script.js"></script>
@@ -356,5 +358,12 @@
             navSidebar.classList.toggle('active');
         });
 
+
+        $(document).ready(function(){
+          $(".owl-carousel").owlCarousel();
+        });
 </script>
+
+
+
 </html>
