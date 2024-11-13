@@ -47,16 +47,16 @@
         <div class="col-12 col-sm-12 col-md-3 col-lg-3 mb-3 mb-sm-2">
           <input type="text" class="form-control" placeholder="Lugar"/>
         </div>
-        <div class="col-12 col-sm-3 col-md-2 col-lg-3 mb-3 mb-sm-2">
+        <div class="col-12 col-sm-3 col-md-2 col-lg-2 mb-3 mb-sm-2">
           <input type="date" class="form-control" placeholder="Check-in"/>
         </div>
-        <div class="col-12 col-sm-3 col-md-2 col-lg-3 mb-3 mb-sm-2">
+        <div class="col-12 col-sm-3 col-md-2 col-lg-2 mb-3 mb-sm-2">
           <input type="date" class="form-control" placeholder="Check-out"/>
         </div>
         <div class="col-12 col-sm-3 col-md-2 col-lg-2 mb-3 mb-sm-2">
           <input type="number" class="form-control" placeholder="Viajeros" min="1"/>
         </div>
-        <div class="col-12 col-sm-3 col-md-2 col-lg-1">
+        <div class="col-12 col-sm-3 col-md-2 col-lg-2">
           <button class="btn w-100">Buscar</button>
         </div>
       </div>
@@ -128,6 +128,7 @@
         <p>$34 USD / noche</p>
       </div>
     </div>
+
     <div class="card">
       <img src="imagenes/Duplex.webp" alt="Alojamiento">
       <div class="card-info">
@@ -153,7 +154,6 @@
       <div class="card-info">
         <h3>Lujo en Puerto Madero | Impresionantes vistas y servicios</h3>
         <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
-    
         <p>20 al 25 de nov.</p>
         <p>$67 USD / noche</p>
       </div>
@@ -317,6 +317,7 @@
     
     
   </section>
+
   <!-- Pie de página -->
   <footer>
     <p>&copy; 2024 StaysBA - Todos los derechos reservados</p>
@@ -328,12 +329,7 @@
   <script src="script.js"></script>
 </body>
 <script>
-    $(window).on('scroll', function() {
-      var scrollPos = $(window).scrollTop();
-      $('header').css('background-position', 'center ' + (scrollPos * 0.5) + 'px');
-  });
-
-  $(document).ready(function() {
+    $(document).ready(function() {
     var barraBusqueda = $('.search-bar');
     var encabezadoAltura = $('header').outerHeight();
 
@@ -344,14 +340,14 @@
             'top': '0',
             'width': '100%',
             'z-index': '1000'
-          }).addClass('barra-fija');
+          }).addClass('barra-fija'); // Añadir la clase para reducir tamaño
         } else {
           barraBusqueda.css({
             'position': 'relative'
-          }).removeClass('barra-fija');
+          }).removeClass('barra-fija'); // Quitar la clase para tamaño normal
         }
-      });
     });
+  });
 
     document.getElementById('toggleButton').addEventListener('click', function() {
             var navSidebar = document.getElementById('navSidebar');

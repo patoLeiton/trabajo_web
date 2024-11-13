@@ -85,21 +85,27 @@ header {
   flex-wrap: wrap;
 }
 
-/* Estilo cuando la barra es fija y más pequeña */
+/* Estilo cuando la barra es fija, centrada y más pequeña lateralmente */
 .barra-fija {
-  padding: 8px; 
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  background-size: -10px;
-}
-
-
-.barra-fija input, .barra-fija button {
-  padding: 5px;
-  font-size: 0.9rem; 
-}
-
-
+    padding: 10px;             
+    width: 70%;                
+    left: 50%;                 
+    transform: translateX(-50%); 
+    max-width: 800px;          
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ff5400; 
+    position: fixed;           
+    top: 0;                    
+    z-index: 1000;
+  }
+  
+  .barra-fija input, .barra-fija button {
+    padding: 8px;              
+    font-size: 0.85rem;        
+  }
+  
+  
 .search-bar input,
 .search-bar button {
   border: none;
