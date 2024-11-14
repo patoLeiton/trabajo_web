@@ -154,7 +154,7 @@ header {
 /* Lista de alojamientos */
 .listing {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Fuerza 4 columnas en pantallas grandes */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1rem;
     padding: 1rem;
     width: 100%;
