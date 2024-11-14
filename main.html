@@ -8,11 +8,12 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
-  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRHRv9JbU6Z4+8eIEU1yMjrKoCl0/c4HvKMCn7X4" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRHRv9JbU6Z4+8eIEU1yMjrKoCl0/c4HvKMCn7X4" crossorigin="anonymous"></script>
 
  
 </head>
@@ -112,86 +113,204 @@
     
   </section>
 
+  <h2 class="titles">Alojamientos para vos</h2>
+  <section class="listing">
+    <div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        
+        <!-- Primera diapositiva -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <img src="imagenes/SanTelmo.webp" class="card-img-top" alt="Alojamiento en San Telmo">
+                <div class="card-info">
+                  <h3>San Telmo, Buenos Aires, Argentina</h3>
+                  <p>Departamento en San Telmo</p>
+                  <p>17 al 22 de nov.</p>
+                  <p>$34 USD / noche</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="imagenes/Duplex.webp" class="card-img-top" alt="Dúplex Av. Santa Fe y 9 de Julio">
+                <div class="card-info">
+                  <h3>Vivienda alquilada entero en Buenos Aires, Argentina</h3>
+                  <p>Dúplex Av. Santa Fe y 9 de Julio</p>
+                  <p>1 al 6 de dic.</p>
+                  <p>$23 USD / noche</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="imagenes/Dpto congreso.webp" class="card-img-top" alt="Alojamiento en Congreso">
+                <div class="card-info">
+                  <h3>Acogedor Apartamento en Congreso</h3>
+                  <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
+                  <p>24 al 29 de nov.</p>
+                  <p>$20 USD / noche</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="imagenes/madero.webp" class="card-img-top" alt="Lujo en Puerto Madero">
+                <div class="card-info">
+                  <h3>Lujo en Puerto Madero | Impresionantes vistas y servicios</h3>
+                  <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
+                  <p>20 al 25 de nov.</p>
+                  <p>$67 USD / noche</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
   
-
+        <!-- Segunda diapositiva -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <img src="imagenes/loftsaaverdra.webp" class="card-img-top" alt="Loft en Saavedra">
+                <div class="card-info">
+                  <h3>Loft a estrenar. Descubrí Saavedra!</h3>
+                  <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
+                  <p>14 al 19 de nov.</p>
+                  <p>$25 USD / noche</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="imagenes/casadecampo.webp" class="card-img-top" alt="Casa de campo en San Isidro">
+                <div class="card-info">
+                  <h3>Casa de campo en San Isidro</h3>
+                  <p>Alojamiento entero en San Isidro, Argentina</p>
+                  <p>21 al 26 de nov.</p>
+                  <p>$500 USD / noche</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="imagenes/oprecoleta.webp" class="card-img-top" alt="Oportunidad en Recoleta">
+                <div class="card-info">
+                  <h3>¡Oportunidad en Recoleta!</h3>
+                  <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
+                  <p>2 al 7 de dic.</p>
+                  <p>$26 USD / noche</p>
+                </div>
+              </div>
+            </div>
+            <!-- Puedes agregar más tarjetas en esta diapositiva si lo deseas -->
+          </div>
+        </div>
+  
+      </div>
+  
+      <button class="carousel-control-prev" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+  
+      <button class="carousel-control-next" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
   
   <h2 class="titles">Alojamientos para vos</h2>
   <section class="listing">
-  <div class="owl-carousel">
 
-    <div class="card">
-      <img src="imagenes/SanTelmo.webp" alt="Alojamiento">
-      <div class="card-info">
-        <h3>San Telmo, Buenos Aires, Argentina</h3>
-        <p>Departamento en San Telmo</p>
-        <p>17 al 22 de nov.</p>
-        <p>$34 USD / noche</p>
-      </div>
-    </div>
 
-    <div class="card">
-      <img src="imagenes/Duplex.webp" alt="Alojamiento">
-      <div class="card-info">
-        <h3>Vivienda alquilada entero en Buenos Aires, Argentina</h3>
-        <p>Dúplex Av. Santa Fe y 9 de Julio</p>
-        <p>1 al 6 de sic.</p>
-        <p>$23 USD / noche</p>
-      </div>
-    </div>
+        <div class="card">
+          <img src="imagenes/SanTelmo.webp" alt="Alojamiento">
+          <div class="card-info">
+            <h3>San Telmo, Buenos Aires, Argentina</h3>
+            <p>Departamento en San Telmo</p>
+            <p>17 al 22 de nov.</p>
+            <p>$34 USD / noche</p>
+          </div>
+        </div>
 
-    <div class="card">
-      <img src="imagenes/Dpto congreso.webp" alt="Alojamiento">
-      <div class="card-info">
-        <h3>Acogedor Apartamento en Congreso</h3>
-        <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
-        <p>24 al 29 de nov.</p>
-        <p>$20 USD / noche</p>
-      </div>
-    </div>
+        <div class="card">
+          <img src="imagenes/Duplex.webp" alt="Alojamiento">
+          <div class="card-info">
+            <h3>Vivienda alquilada entero en Buenos Aires, Argentina</h3>
+            <p>Dúplex Av. Santa Fe y 9 de Julio</p>
+            <p>1 al 6 de sic.</p>
+            <p>$23 USD / noche</p>
+          </div>
+        </div>
 
-    <div class="card">
-      <img src="imagenes/madero.webp" alt="Alojamiento">
-      <div class="card-info">
-        <h3>Lujo en Puerto Madero | Impresionantes vistas y servicios</h3>
-        <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
-        <p>20 al 25 de nov.</p>
-        <p>$67 USD / noche</p>
-      </div>
-    </div>
+        <div class="card">
+          <img src="imagenes/Dpto congreso.webp" alt="Alojamiento">
+          <div class="card-info">
+            <h3>Acogedor Apartamento en Congreso</h3>
+            <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
+            <p>24 al 29 de nov.</p>
+            <p>$20 USD / noche</p>
+          </div>
+        </div>
 
-    <div class="card">
-      <img src="imagenes/loftsaaverdra.webp" alt="Alojamiento">
-      <div class="card-info">
-        <h3>Loft a estrenar. Descubrí Saavedra!</h3>
-        <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
-        <p>2 huéspedes, 1 dormitorio, 1 cama, 1 baño</p>
-        <p>14 al 19 de nov.</p>
-        <p>$25 USD / noche</p>
-      </div>
-    </div>
+        <div class="card">
+          <img src="imagenes/madero.webp" alt="Alojamiento">
+          <div class="card-info">
+            <h3>Lujo en Puerto Madero | Impresionantes vistas y servicios</h3>
+            <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
+            <p>20 al 25 de nov.</p>
+            <p>$67 USD / noche</p>
+          </div>
+        </div>
 
-    <div class="card">
-      <img src="imagenes/casadecampo.webp" alt="Alojamiento">
-      <div class="card-info">
-        <h3>Casa de campo en san Isidro</h3>
-        <p>Alojamiento entero en San Isidro, Argentina</p>
-        <p>7 huéspedes, 5 dormitorios, 6 camas, 2,5 baños</p>
-        <p>21 al 26 de nov.</p>
-        <p>$500 USD / noche</p>
-      </div>
-    </div>
+        <div class="card">
+          <img src="imagenes/loftsaaverdra.webp" alt="Alojamiento">
+          <div class="card-info">
+            <h3>Loft a estrenar. Descubrí Saavedra!</h3>
+            <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
+            <p>2 huéspedes, 1 dormitorio, 1 cama, 1 baño</p>
+            <p>14 al 19 de nov.</p>
+            <p>$25 USD / noche</p>
+          </div>
+        </div>
 
-    <div class="card">
-      <img src="imagenes/oprecoleta.webp" alt="Alojamiento">
-      <div class="card-info">
-        <h3>¡Oportunidad en Recoleta!</h3>
-        <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
-        <p>3 huéspedes, 1 dormitorio, 2 camas, 1 baño</p>
-        <p>2 al 7 de dic.</p>
-        <p>$26 USD / noche</p>
+        <div class="card">
+          <img src="imagenes/casadecampo.webp" alt="Alojamiento">
+          <div class="card-info">
+            <h3>Casa de campo en san Isidro</h3>
+            <p>Alojamiento entero en San Isidro, Argentina</p>
+            <p>7 huéspedes, 5 dormitorios, 6 camas, 2,5 baños</p>
+            <p>21 al 26 de nov.</p>
+            <p>$500 USD / noche</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="imagenes/oprecoleta.webp" alt="Alojamiento">
+          <div class="card-info">
+            <h3>¡Oportunidad en Recoleta!</h3>
+            <p>Vivienda alquilada entero en Buenos Aires, Argentina</p>
+            <p>3 huéspedes, 1 dormitorio, 2 camas, 1 baño</p>
+            <p>2 al 7 de dic.</p>
+            <p>$26 USD / noche</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
   </section>
 
   </div>
@@ -319,19 +438,7 @@
   </footer>
 
   <script src="script.js"></script>
-  <script src="jquery.min.js"></script>
-  <script src="owlcarousel/owl.carousel.min.js"></script>
-
-  <script>
-    $(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-    items: 3,         // Número de elementos visibles en el carrusel
-    loop: true,       // Habilita el bucle infinito
-    margin: 10,       // Espacio entre elementos
-    nav: true,        // Muestra los botones de navegación
-    dots: true        // Muestra los puntos de navegación
-  });
-});
+  
 
 
   </script>
