@@ -1,0 +1,277 @@
+[
+    
+      {
+        "id": 1,
+        "titulo": "San Telmo, Buenos Aires, Argentina",
+        "detalles": "2 huéspedes, 1 cama, 1 baño",
+        "descripcion": "Departamento en San Telmo",
+        "fechas": "17 al 22 de nov.",
+        "precio": "$34 USD / noche",
+        "imagen": "imagenes/SanTelmo.webp"
+      },
+      {
+        "id": 2,
+        "titulo": "Casa de campo en San Isidro",
+        "detalles": "7 huéspedes, 5 dormitorios, 6 camas, 2,5 baños",
+        "descripcion": "Alojamiento entero en San Isidro, Argentina",
+        "fechas": "21 al 26 de nov.",
+        "precio": "$500 USD / noche",
+        "imagen": "imagenes/casadecampo.webp"
+      },
+      {
+        "id": 3,
+        "titulo": "Acogedor Apartamento en Congreso",
+        "detalles": "2 huéspedes, 1 cama, 1 baño",
+        "descripcion": "Vivienda alquilada entero en Buenos Aires, Argentina",
+        "fechas": "24 al 29 de nov.",
+        "precio": "$20 USD / noche",
+        "imagen": "imagenes/Dptocongreso.webp"
+      },
+      {
+        "id": 4,
+        "titulo": "Lujo en Puerto Madero | Impresionantes vistas y servicios",
+        "detalles": "5 huéspedes, 2 dormitorios, 3 camas, 1 baño",
+        "descripcion": "Vivienda alquilada entero en Buenos Aires, Argentina",
+        "fechas": "20 al 25 de nov.",
+        "precio": "$67 USD / noche",
+        "imagen": "imagenes/madero.webp"
+      },
+      {
+        "id": 5,
+        "titulo": "Loft a estrenar. Descubrí Saavedra!",
+        "detalles": "4 huéspedes, 1 dormitorio, 1 cama, 1 sofá cama, 1,5 baños",
+        "descripcion": "Vivienda alquilada entero en Buenos Aires, Argentina",
+        "fechas": "14 al 19 de nov.",
+        "precio": "$25 USD / noche",
+        "imagen": "imagenes/loftsaaverdra.webp"
+      },
+      {
+        "id": 6,
+        "titulo": "¡Oportunidad en Recoleta!",
+        "detalles": "3 huéspedes, 1 dormitorio, 2 camas, 1 baño",
+        "descripcion": "Vivienda alquilada entero en Buenos Aires, Argentina",
+        "fechas": "2 al 7 de dic.",
+        "precio": "$26 USD / noche",
+        "imagen": "imagenes/oprecoleta.webp"
+      },
+      {
+        "id": 7,
+        "titulo": "Monica's Apartments Dpto 3",
+        "detalles": "11 huéspedes, 3 dormitorios, 10 camas, 2,5 baños",
+        "descripcion": "Departamento en complejo residencial entero en Canning, Argentina",
+        "fechas": "2 al 7 de dic.",
+        "precio": "$188 USD / noche",
+        "imagen": "imagenes/monicadepto.webp"
+      },
+      {
+        "id": 8,
+        "titulo": "Dúplex Av. Santa Fe y 9 de Julio",
+        "detalles": "2 huéspedes, 1 dormitorio, 1 cama, 1 baño",
+        "descripcion": "Vivienda alquilada entero en Buenos Aires, Argentina",
+        "fechas": "1 al 6 de dic.",
+        "precio": "$23 USD / noche",
+        "imagen": "imagenes/Duplex.webp"
+      },
+      {
+        "id": 9,
+        "titulo": "Concepto.Espacio. Exclusiva Casa En Buenos Aires",
+        "detalles": "8 huéspedes, 3 dormitorios, 5 camas, 5,5 baños",
+        "descripcion": "Alojamiento entero en Vicente López, Argentina",
+        "fechas": "4 al 11 de dic.",
+        "precio": "$2,500 USD / noche",
+        "imagen": "imagenes/mansionvicente.webp"
+      },
+      {
+        "id": 10,
+        "titulo": "Vaer House",
+        "detalles": "8 huéspedes, 5 dormitorios, 9 camas, 4,5 baños",
+        "descripcion": "Alojamiento entero en Buenos Aires, Argentina",
+        "fechas": "2 al 9 de dic.",
+        "precio": "$182 USD / noche",
+        "imagen": "imagenes/casapileta.webp"
+      },
+      {
+        "id": 11,
+        "titulo": "Villa Palermo | Confort y diseño",
+        "detalles": "6 huéspedes, 3 dormitorios, 3 camas, 2 baños",
+        "descripcion": "Vivienda completa en Buenos Aires, Argentina",
+        "fechas": "5 al 10 de dic.",
+        "precio": "$120 USD / noche",
+        "imagen": "imagenes/villapalermo.webp"
+      },
+      {
+        "id": 12,
+        "titulo": "Casa de lujo en Mar del Plata",
+        "detalles": "12 huéspedes, 5 dormitorios, 7 camas, 5 baños",
+        "descripcion": "Casa entera en Mar del Plata, Argentina",
+        "fechas": "18 al 25 de dic.",
+        "precio": "$750 USD / noche",
+        "imagen": "imagenes/casalujomdp.webp"
+      },
+      {
+        "id": 13,
+        "titulo": "Estudio moderno en Belgrano",
+        "detalles": "2 huéspedes, 1 cama, 1 baño",
+        "descripcion": "Estudio completo en Buenos Aires, Argentina",
+        "fechas": "10 al 15 de nov.",
+        "precio": "$30 USD / noche",
+        "imagen": "imagenes/estudiobelgrano.webp"
+      },
+      {
+        "id": 14,
+        "titulo": "Casa familiar en Tigre",
+        "detalles": "8 huéspedes, 4 dormitorios, 6 camas, 3 baños",
+        "descripcion": "Casa entera en Tigre, Argentina",
+        "fechas": "8 al 15 de dic.",
+        "precio": "$160 USD / noche",
+        "imagen": "imagenes/casatigre.webp"
+      },
+      {
+        "id": 15,
+        "titulo": "Apartamento en el centro",
+        "detalles": "3 huéspedes, 2 camas, 1 baño",
+        "descripcion": "Apartamento entero en Buenos Aires, Argentina",
+        "fechas": "15 al 20 de nov.",
+        "precio": "$22 USD / noche",
+        "imagen": "imagenes/dptocentro.webp"
+      },
+      {
+        "id": 16,
+        "titulo": "Residencia de lujo en Mendoza",
+        "detalles": "10 huéspedes, 5 dormitorios, 6 camas, 4,5 baños",
+        "descripcion": "Casa entera en Mendoza, Argentina",
+        "fechas": "12 al 20 de dic.",
+        "precio": "$500 USD / noche",
+        "imagen": "imagenes/luxmendoza.webp"
+      },
+      {
+        "id": 17,
+        "titulo": "Loft moderno en Córdoba",
+        "detalles": "4 huéspedes, 2 camas, 1 baño",
+        "descripcion": "Loft entero en Córdoba, Argentina",
+        "fechas": "22 al 27 de nov.",
+        "precio": "$35 USD / noche",
+        "imagen": "imagenes/loftcordoba.webp"
+      },
+      {
+        "id": 18,
+        "titulo": "Casa con vista al mar en Cariló",
+        "detalles": "6 huéspedes, 3 dormitorios, 4 camas, 3 baños",
+        "descripcion": "Casa entera en Cariló, Argentina",
+        "fechas": "20 al 27 de dic.",
+        "precio": "$300 USD / noche",
+        "imagen": "imagenes/casacarilo.webp"
+      },
+      {
+        "id": 19,
+        "titulo": "Penthouse en Recoleta",
+        "detalles": "4 huéspedes, 2 dormitorios, 2 camas, 2 baños",
+        "descripcion": "Penthouse completo en Buenos Aires, Argentina",
+        "fechas": "10 al 15 de dic.",
+        "precio": "$100 USD / noche",
+        "imagen": "imagenes/penthouserecoleta.webp"
+      },
+      {
+        "id": 20,
+        "titulo": "Chalet de montaña en Bariloche",
+        "detalles": "8 huéspedes, 4 dormitorios, 6 camas, 3 baños",
+        "descripcion": "Casa entera en Bariloche, Argentina",
+        "fechas": "20 al 27 de dic.",
+        "precio": "$450 USD / noche",
+        "imagen": "imagenes/chaletbariloche.webp"
+      },
+
+        {
+        "id": 21,
+        "titulo": "Petit Atelier Puerto Eclipse",
+        "detalles": "2 huéspedes, 1 dormitorio, 1 cama, 1 baño",
+        "descripcion": "Minicasa en Tigre, Argentina",
+        "fechas": "14 al 16 de nov.",
+        "precio": "$100 USD / noche",
+        "imagen": "imagenes/petitatelier.webp"
+        },
+        {
+        "id": 22,
+        "titulo": "Casita flotante Karkú",
+        "detalles": "3 huéspedes, 1 dormitorio, 1 cama, 1 baño",
+        "descripcion": "Casa flotante en San Fernando, Argentina",
+        "fechas": "2 al 4 de dic.",
+        "precio": "$71 USD / noche",
+        "imagen": "imagenes/karku.webp"
+        },
+        {
+        "id": 23,
+        "titulo": "Cabaña Madreselva inmersa en el Delta del Tigre",
+        "detalles": "3 huéspedes, 2 dormitorios, 1 cama, 1 baño",
+        "descripcion": "Cabaña entero en Arroyo Abra Vieja, Argentina",
+        "fechas": "15 al 17 de nov.",
+        "precio": "$34 USD / noche",
+        "imagen": "imagenes/cabaña delta.webp"
+        },
+        {
+        "id": 24,
+        "titulo": "Casa Matecha, Campo La Pendiente",
+        "detalles": "3 huéspedes, 1 dormitorio, 3 camas, 1 baño",
+        "descripcion": "Cabaña entero en Marcos Paz, Argentina",
+        "fechas": "29 al 30 de nov.",
+        "precio": "$100 USD / noche",
+        "imagen": "imagenes/matecha.webp"
+        },
+        {
+        "id": 25,
+        "titulo": "Casa en el Delta Sobre el Río San Antonio Tigre",
+        "detalles": "4 huéspedes, 1 dormitorio, 4 camas, 1 baño",
+        "descripcion": "Alojamiento entero en Tigre, Argentina",
+        "fechas": "29 al 30 de nov.",
+        "precio": "$150 USD / noche",
+        "imagen": "imagenes/cada deltasobre rio.webp"
+        },
+        {
+        "id": 26,
+        "titulo": "Casa container en Barrio Privado rural con laguna",
+        "detalles": "4 huéspedes, 2 dormitorios, 3 camas, 1 baño",
+        "descripcion": "Casa rural entero en La Plata, Argentina",
+        "fechas": "26 al 28 de nov.",
+        "precio": "$45 USD / noche",
+        "imagen": "imagenes/casaconteiner.webp"
+        },
+        {
+        "id": 27,
+        "titulo": "Quinta 'La Reja'",
+        "detalles": "8 huéspedes, 4 dormitorios, 7 camas, 3 baños",
+        "descripcion": "Casa rural entero en Moreno Partido, Argentina",
+        "fechas": "23 al 24 de nov.",
+        "precio": "$160 USD / noche",
+        "imagen": "imagenes/quinta.webp"
+        },
+        {
+        "id": 28,
+        "titulo": "Casa Quinta La Lupita",
+        "detalles": "7 huéspedes, 3 dormitorios, 4 camas, 3 baños",
+        "descripcion": "Minicasa en General Rodríguez, Argentina",
+        "fechas": "16 al 17 de nov.",
+        "precio": "$399 USD / noche",
+        "imagen": "imagenes/quintalupita.webp"
+        },
+        {
+        "id": 29,
+        "titulo": "Alquiler Dúplex a estrenar",
+        "detalles": "3 huéspedes, 1 dormitorio, 2 camas, 1 baño",
+        "descripcion": "Cabaña entero en Pilar, Argentina",
+        "fechas": "26 al 28 de nov.",
+        "precio": "$90 USD / noche",
+        "imagen": "imagenes/cabañapialr.webp"
+        },
+        {
+        "id": 30,
+        "titulo": "Mansión Para 16 personas en Pilar Pileta y Parilla",
+        "detalles": "Más de 16 huéspedes, 5 dormitorios, 12 camas, 4 baños",
+        "descripcion": "Alojamiento entero en La Lonja, Argentina",
+        "fechas": "18 al 19 de enero.",
+        "precio": "$1,200 USD / noche",
+        "imagen": "imagenes/mansion pilar.webp"
+        }
+
+]
+  
+  

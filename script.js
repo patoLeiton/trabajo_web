@@ -93,4 +93,29 @@ document.getElementById('toggleButton').addEventListener('click', function() {
       });
     }
     
- 
+    fetch("cards.json").then(resp=>resp.json()).then(dato=>{
+      rendercard(dato);
+    })
+
+    function rendercard(source){
+      const contenedor = document.getElementById("cartas")
+      contenedor.innerHTML = ""
+      source.forEach(item=> {
+        const carta = document.createElement("div")
+        carta.classList.add("card")
+        carta.setAttribute("data-id",item.id)
+        carta.innerHTML = `<img src=${item.imagen} alt="Alojamiento">
+          <div class="card-info">
+            <h3>${item.titulo} </h3>
+            <p>${item.detalles} </p>
+            <p>${item.descripcion} </p>
+            <p>${item.fechas} </p>
+            <p><strong>${item.precio} </strong></p>
+          </div>`
+        contenedor.appendChild(carta)  
+        carta.addEventListener("click",()=>{
+          window.location.href = `detalle.html?id=${item.id}`
+        })
+      })
+    }
+
