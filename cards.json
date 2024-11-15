@@ -7,7 +7,8 @@
         "descripcion": "Departamento en San Telmo",
         "fechas": "17 al 22 de nov.",
         "precio": "$34 USD / noche",
-        "imagen": "imagenes/SanTelmo.webp"
+        "imagen": "imagenes/SanTelmo.webp",
+        "tipo": "Departamento"
       },
       {
         "id": 2,
@@ -16,7 +17,8 @@
         "descripcion": "Alojamiento entero en San Isidro, Argentina",
         "fechas": "21 al 26 de nov.",
         "precio": "$500 USD / noche",
-        "imagen": "imagenes/casadecampo.webp"
+        "imagen": "imagenes/casadecampo.webp",
+        "tipo": "Casa de Campo"
       },
       {
         "id": 3,
@@ -25,7 +27,8 @@
         "descripcion": "Vivienda alquilada entero en Buenos Aires, Argentina",
         "fechas": "24 al 29 de nov.",
         "precio": "$20 USD / noche",
-        "imagen": "imagenes/Dptocongreso.webp"
+        "imagen": "imagenes/Dptocongreso.webp",
+        "tipo": "Departamento"
       },
       {
         "id": 4,
@@ -34,7 +37,8 @@
         "descripcion": "Vivienda alquilada entero en Buenos Aires, Argentina",
         "fechas": "20 al 25 de nov.",
         "precio": "$67 USD / noche",
-        "imagen": "imagenes/madero.webp"
+        "imagen": "imagenes/madero.webp",
+        "tipo": "Departamento"
       },
       {
         "id": 5,
@@ -43,7 +47,8 @@
         "descripcion": "Vivienda alquilada entero en Buenos Aires, Argentina",
         "fechas": "14 al 19 de nov.",
         "precio": "$25 USD / noche",
-        "imagen": "imagenes/loftsaaverdra.webp"
+        "imagen": "imagenes/loftsaaverdra.webp",
+        "tipo": "Departamento"
       },
       {
         "id": 6,
@@ -52,7 +57,8 @@
         "descripcion": "Vivienda alquilada entero en Buenos Aires, Argentina",
         "fechas": "2 al 7 de dic.",
         "precio": "$26 USD / noche",
-        "imagen": "imagenes/oprecoleta.webp"
+        "imagen": "imagenes/oprecoleta.webp",
+        "tipo": "Casa"
       },
       {
         "id": 7,
@@ -61,7 +67,9 @@
         "descripcion": "Departamento en complejo residencial entero en Canning, Argentina",
         "fechas": "2 al 7 de dic.",
         "precio": "$188 USD / noche",
-        "imagen": "imagenes/monicadepto.webp"
+        "imagen": "imagenes/monicadepto.webp",
+        "tipo": "Departamento"
+
       },
       {
         "id": 8,
@@ -70,7 +78,8 @@
         "descripcion": "Vivienda alquilada entero en Buenos Aires, Argentina",
         "fechas": "1 al 6 de dic.",
         "precio": "$23 USD / noche",
-        "imagen": "imagenes/Duplex.webp"
+        "imagen": "imagenes/Duplex.webp",
+        "tipo": "Departamento"
       },
       {
         "id": 9,
@@ -79,7 +88,8 @@
         "descripcion": "Alojamiento entero en Vicente López, Argentina",
         "fechas": "4 al 11 de dic.",
         "precio": "$2,500 USD / noche",
-        "imagen": "imagenes/mansionvicente.webp"
+        "imagen": "imagenes/mansionvicente.webp",
+        "tipo": "Casa"
       },
       {
         "id": 10,
@@ -88,7 +98,8 @@
         "descripcion": "Alojamiento entero en Buenos Aires, Argentina",
         "fechas": "2 al 9 de dic.",
         "precio": "$182 USD / noche",
-        "imagen": "imagenes/casapileta.webp"
+        "imagen": "imagenes/casapileta.webp",
+        "tipo": "Casa"
       },
       {
         "id": 11,
@@ -97,7 +108,9 @@
         "descripcion": "Vivienda completa en Buenos Aires, Argentina",
         "fechas": "5 al 10 de dic.",
         "precio": "$120 USD / noche",
-        "imagen": "imagenes/villapalermo.webp"
+        "imagen": "imagenes/villapalermo.webp",
+        "tipo": "Casa"
+
       },
       {
         "id": 12,
@@ -188,7 +201,9 @@
         "descripcion": "Minicasa en Tigre, Argentina",
         "fechas": "14 al 16 de nov.",
         "precio": "$100 USD / noche",
-        "imagen": "imagenes/petitatelier.webp"
+        "imagen": "imagenes/petitatelier.webp",
+        "tipo": "Casa"
+
         },
         {
         "id": 22,
@@ -197,7 +212,8 @@
         "descripcion": "Casa flotante en San Fernando, Argentina",
         "fechas": "2 al 4 de dic.",
         "precio": "$71 USD / noche",
-        "imagen": "imagenes/karku.webp"
+        "imagen": "imagenes/karku.webp",
+        "tipo": "Casa"
         },
         {
         "id": 23,
@@ -206,7 +222,8 @@
         "descripcion": "Cabaña entero en Arroyo Abra Vieja, Argentina",
         "fechas": "15 al 17 de nov.",
         "precio": "$34 USD / noche",
-        "imagen": "imagenes/cabaña delta.webp"
+        "imagen": "imagenes/cabaña delta.webp",
+        "tipo": "Cabaña"
         },
         {
         "id": 24,
@@ -215,7 +232,8 @@
         "descripcion": "Cabaña entero en Marcos Paz, Argentina",
         "fechas": "29 al 30 de nov.",
         "precio": "$100 USD / noche",
-        "imagen": "imagenes/matecha.webp"
+        "imagen": "imagenes/matecha.webp",
+        "tipo": "Casa"
         },
         {
         "id": 25,
@@ -224,7 +242,8 @@
         "descripcion": "Alojamiento entero en Tigre, Argentina",
         "fechas": "29 al 30 de nov.",
         "precio": "$150 USD / noche",
-        "imagen": "imagenes/cada deltasobre rio.webp"
+        "imagen": "imagenes/cada deltasobre rio.webp",
+        "tipo": "Cabaña"
         },
         {
         "id": 26,
@@ -233,7 +252,8 @@
         "descripcion": "Casa rural entero en La Plata, Argentina",
         "fechas": "26 al 28 de nov.",
         "precio": "$45 USD / noche",
-        "imagen": "imagenes/casaconteiner.webp"
+        "imagen": "imagenes/casaconteiner.webp",
+        "tipo": "Casa"
         },
         {
         "id": 27,
@@ -242,7 +262,8 @@
         "descripcion": "Casa rural entero en Moreno Partido, Argentina",
         "fechas": "23 al 24 de nov.",
         "precio": "$160 USD / noche",
-        "imagen": "imagenes/quinta.webp"
+        "imagen": "imagenes/quinta.webp",
+        "tipo": "Casa Quinta"
         },
         {
         "id": 28,
@@ -251,7 +272,8 @@
         "descripcion": "Minicasa en General Rodríguez, Argentina",
         "fechas": "16 al 17 de nov.",
         "precio": "$399 USD / noche",
-        "imagen": "imagenes/quintalupita.webp"
+        "imagen": "imagenes/quintalupita.webp",
+        "tipo": "Casa Quinta"
         },
         {
         "id": 29,
@@ -260,7 +282,8 @@
         "descripcion": "Cabaña entero en Pilar, Argentina",
         "fechas": "26 al 28 de nov.",
         "precio": "$90 USD / noche",
-        "imagen": "imagenes/cabañapialr.webp"
+        "imagen": "imagenes/cabañapialr.webp",
+        "tipo": "Cabaña"
         },
         {
         "id": 30,
@@ -269,7 +292,9 @@
         "descripcion": "Alojamiento entero en La Lonja, Argentina",
         "fechas": "18 al 19 de enero.",
         "precio": "$1,200 USD / noche",
-        "imagen": "imagenes/mansion pilar.webp"
+        "imagen": "imagenes/",
+        "tipo": "Casa Quinta"
+
         }
 
 ]
