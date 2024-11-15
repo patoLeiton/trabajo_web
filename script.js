@@ -97,25 +97,69 @@ document.getElementById('toggleButton').addEventListener('click', function() {
       rendercard(dato);
     })
 
-    function rendercard(source){
-      const contenedor = document.getElementById("cartas")
-      contenedor.innerHTML = ""
-      source.forEach(item=> {
-        const carta = document.createElement("div")
-        carta.classList.add("card")
-        carta.setAttribute("data-id",item.id)
-        carta.innerHTML = `<img src=${item.imagen} alt="Alojamiento">
-          <div class="card-info">
-            <h3>${item.titulo} </h3>
-            <p>${item.detalles} </p>
-            <p>${item.descripcion} </p>
-            <p>${item.fechas} </p>
-            <p><strong>${item.precio} </strong></p>
-          </div>`
-        contenedor.appendChild(carta)  
-        carta.addEventListener("click",()=>{
-          window.location.href = `detalle.html?id=${item.id}`
-        })
-      })
+    function rendercard(source) {
+      const contenedor = document.getElementById("cartas");
+      const maxIncrement = 10; // Número de elementos a mostrar cada vez
+      let currentIndex = 0; // Índice inicial para controlar los elementos mostrados
+    
+      // Función para renderizar una porción de los elementos
+      function renderNextBatch() {
+        const nextIndex = Math.min(currentIndex + maxIncrement, source.length); // Calcular el próximo límite
+        const itemsToRender = source.slice(currentIndex, nextIndex); // Obtener los elementos
+    
+        itemsToRender.forEach(item => {
+          const carta = document.createElement("div");
+          carta.classList.add("card");
+          carta.setAttribute("data-id", item.id);
+          carta.innerHTML = `
+            <img src=${item.imagen} alt="Alojamiento">
+            <div class="card-info">
+              <h3>${item.titulo}</h3>
+              <p>${item.detalles}</p>
+              <p>${item.descripcion}</p>
+              <p>${item.fechas}</p>
+              <p><strong>${item.precio}</strong></p>
+            </div>`;
+          contenedor.appendChild(carta);
+    
+          // Agregar evento de clic para redirigir a detalle.html
+          carta.addEventListener("click", () => {
+            window.location.href = `detalle.html?id=${item.id}`;
+          });
+        });
+    
+        currentIndex = nextIndex; // Actualizar el índice actual
+    
+        // Mostrar u ocultar el botón según si quedan más elementos
+        if (currentIndex >= source.length) {
+          document.getElementById("mostrar-mas-container").style.display = "none";
+        }
+      }
+    
+      // Limpiar el contenedor y renderizar los primeros elementos
+      contenedor.innerHTML = ""; 
+      currentIndex = 0;
+      renderNextBatch();
+    
+      // Crear el contenedor del botón "Mostrar más" si no existe
+      let explorarDiv = document.getElementById("mostrar-mas-container");
+      if (!explorarDiv) {
+        explorarDiv = document.createElement("div");
+        explorarDiv.id = "mostrar-mas-container";
+        explorarDiv.classList.add("explorar-mas");
+        explorarDiv.innerHTML = `
+          <p>Seguir explorando alojamientos</p>
+          <button id="mostrar-mas">Mostrar más</button>`;
+        contenedor.parentElement.appendChild(explorarDiv);
+    
+        // Agregar funcionalidad al botón "Mostrar más"
+        document.getElementById("mostrar-mas").addEventListener("click", renderNextBatch);
+      } else {
+        explorarDiv.style.display = "block"; // Asegurarse de que sea visible
+      }
     }
-
+    
+    explorarDiv.innerHTML = `
+    <p class="text-muted mb-2">Seguir explorando alojamientos</p>
+    <button id="mostrar-mas" class="btn btn-primary">Mostrar más</button>`;
+  

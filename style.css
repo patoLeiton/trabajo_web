@@ -49,7 +49,7 @@ header {
     top: -90px; 
     left: 0px; 
     color: #ff5400;
-    text-shadow: 2px 2px 4px rgba(60, 59, 59, 0.5);
+    text-shadow: 4px 4px 8px rgba(255, 255, 255, 0.5);
     
     
   }
@@ -94,7 +94,7 @@ header {
     left: 50%;                 
     transform: translateX(-50%); 
     max-width: 800px;          
-    border-radius: 100px;
+    border-radius: 30px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     background-color: #ff5400; 
     position: fixed;           
@@ -113,7 +113,7 @@ header {
   border: none;
   outline: none;
   padding: 10px 15px;
-  border-radius: 25px;
+  border-radius: 20px;
   font-size: 16px;
   flex: 1;
   transition: all 0.3s ease; /* Transición para los campos */
@@ -323,3 +323,36 @@ nav a {
 .buscar-nav{
     padding: 10px;
 }
+.explorar-mas {
+    margin: 20px auto; /* Espaciado y centrado */
+    text-align: center;
+    padding: 15px 0;
+  }
+  
+  .explorar-mas p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #333; /* Color del texto */
+  }
+  
+  #mostrar-mas {
+    background-color: #ff5400; /* Azul de Bootstrap */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Animación suave */
+  }
+  
+  #mostrar-mas:hover {
+    background-color: #0056b3; /* Azul más oscuro en hover */
+    transform: scale(1.05); /* Efecto de agrandamiento */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+  }
+  
+  #mostrar-mas:active {
+    transform: scale(0.95); /* Efecto de reducción al hacer clic */
+  }
+  
