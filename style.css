@@ -70,9 +70,10 @@ header {
   }
   
   .user-icon {
-    background-color: #ddd;
+    background-color: #ff5400;
     padding: 0.5rem;
     border-radius: 50%;
+    border-color: #0056b3;
   }
   
   /* Barra de búsqueda */
@@ -262,10 +263,11 @@ nav a {
 }
 
 .user-icon {
-    background-color: #ddd;
+    background-color: #ff5400;
     padding: 0.5rem;
     border-radius: 50%;
     cursor: pointer;
+    border-color: #0056b3;
 }
 
 /*barra de navegacion oculta*/
