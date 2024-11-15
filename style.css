@@ -60,7 +60,8 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
-  .user-options {
+
+  .user-drop-options {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -69,10 +70,10 @@ header {
     left: 0px; 
   }
   
-  .user-icon {
+  .user-drop-icon {
     background-color: #ff5400;
     padding: 0.5rem;
-    border-radius: 50%;
+    border-radius: 12%;
     border-color: #0056b3;
   }
   
@@ -366,4 +367,4 @@ nav a {
   #mostrar-mas:active {
     transform: scale(0.95); /* Efecto de reducción al hacer clic */
   }
-  
+
