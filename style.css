@@ -322,9 +322,18 @@ nav a {
 .viajeros-nav{
     padding: 10px;
 }
-.buscar-nav{
+.buscar-nav {
     padding: 10px;
+    transition: all 0.3s ease;
+    border-radius: 20px;
 }
+  .buscar-nav button{
+    color: #ffffff;
+  }
+  .buscar-nav:hover {
+    background-color: #e94e01;
+  }
+  
 .explorar-mas {
     margin: 20px auto; /* Espaciado y centrado */
     text-align: center;
