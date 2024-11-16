@@ -38,6 +38,10 @@ header {
     left: 0px; 
   }
   
+.btn:hover{
+    background-color: #0056b3;
+}
+
   nav a {
     margin: 0 1rem;
     text-decoration: none;

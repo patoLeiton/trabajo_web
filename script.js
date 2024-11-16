@@ -23,6 +23,21 @@ $(window).on('scroll', function() {
 });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const titleElement = document.querySelector('.titles'); // Seleccionamos el elemento <h2>
+
+  document.querySelectorAll('.categories .btn').forEach(button => {
+    button.addEventListener('click', () => {
+      const selectedType = button.getAttribute('data-type');
+      titleElement.textContent = `${selectedType} para vos`; // Cambiamos el texto del <h2>
+      filterByType(selectedType); // Filtramos las tarjetas
+      if (selectedType == null){
+        titleElement.textContent = `Alojamientos para vos`;
+      }
+    });
+  });
+});
+
 document.getElementById('toggleButton').addEventListener('click', function() {
         var navSidebar = document.getElementById('navSidebar');
         navSidebar.classList.toggle('active');
@@ -97,15 +112,18 @@ document.getElementById('toggleButton').addEventListener('click', function() {
       rendercard(dato);
     })
 
-    function rendercard(source) {
+    function rendercard(source, filterType = null) {
       const contenedor = document.getElementById("cartas");
-      const maxIncrement = 10; // Número de elementos a mostrar cada vez
-      let currentIndex = 0; // Índice inicial para controlar los elementos mostrados
+      const maxIncrement = 10;
+      let currentIndex = 0;
     
-      // Función para renderizar una porción de los elementos
       function renderNextBatch() {
-        const nextIndex = Math.min(currentIndex + maxIncrement, source.length); // Calcular el próximo límite
-        const itemsToRender = source.slice(currentIndex, nextIndex); // Obtener los elementos
+        const filteredSource = filterType
+          ? source.filter(item => item.tipo === filterType)
+          : source;
+    
+        const nextIndex = Math.min(currentIndex + maxIncrement, filteredSource.length);
+        const itemsToRender = filteredSource.slice(currentIndex, nextIndex);
     
         itemsToRender.forEach(item => {
           const carta = document.createElement("div");
@@ -122,11 +140,37 @@ document.getElementById('toggleButton').addEventListener('click', function() {
             </div>`;
           contenedor.appendChild(carta);
     
-          // Agregar evento de clic para redirigir a detalle.html
           carta.addEventListener("click", () => {
             window.location.href = `detalle.html?id=${item.id}`;
           });
         });
+    
+        currentIndex = nextIndex;
+    
+        if (currentIndex >= filteredSource.length) {
+          document.getElementById("mostrar-mas-container").style.display = "none";
+        }
+      }
+    
+      contenedor.innerHTML = "";
+      currentIndex = 0;
+      renderNextBatch();
+    
+      let explorarDiv = document.getElementById("mostrar-mas-container");
+      if (!explorarDiv) {
+        explorarDiv = document.createElement("div");
+        explorarDiv.id = "mostrar-mas-container";
+        explorarDiv.classList.add("explorar-mas");
+        explorarDiv.innerHTML = `
+          <p>Seguir explorando alojamientos</p>
+          <button id="mostrar-mas">Mostrar más</button>`;
+        contenedor.parentElement.appendChild(explorarDiv);
+    
+        document.getElementById("mostrar-mas").addEventListener("click", renderNextBatch);
+      } else {
+        explorarDiv.style.display = "block";
+      }
+    }
     
         currentIndex = nextIndex; // Actualizar el índice actual
     
@@ -134,7 +178,7 @@ document.getElementById('toggleButton').addEventListener('click', function() {
         if (currentIndex >= source.length) {
           document.getElementById("mostrar-mas-container").style.display = "none";
         }
-      }
+      
     
       // Limpiar el contenedor y renderizar los primeros elementos
       contenedor.innerHTML = ""; 
@@ -157,9 +201,16 @@ document.getElementById('toggleButton').addEventListener('click', function() {
       } else {
         explorarDiv.style.display = "block"; // Asegurarse de que sea visible
       }
-    }
+    
+      function filterByType(type) {
+        fetch("cards.json")
+          .then(resp => resp.json())
+          .then(data => {
+            rendercard(data, type);
+          });
+      }
+      
     
     explorarDiv.innerHTML = `
     <p class="text-muted mb-2">Seguir explorando alojamientos</p>
     <button id="mostrar-mas" class="btn btn-primary">Mostrar más</button>`;
-  
