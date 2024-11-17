@@ -119,7 +119,7 @@
         "descripcion": "Casa entera en Mar del Plata, Argentina",
         "fechas": "18 al 25 de dic.",
         "precio": "$750 USD / noche",
-        "imagen": "imagenes/mansion mar del plata.webp",
+        "imagen": "imagenes/mansionmardelplata.webp",
         "tipo": "Casa"
       },
       {
@@ -129,7 +129,7 @@
         "descripcion": "Estudio completo en Buenos Aires, Argentina",
         "fechas": "10 al 15 de nov.",
         "precio": "$30 USD / noche",
-        "imagen": "imagenes/estudio belgrano.webp",
+        "imagen": "imagenes/estudiobelgrano.webp",
         "tipo": "Departamento"
       },
       {
@@ -149,7 +149,7 @@
         "descripcion": "Apartamento entero en Buenos Aires, Argentina",
         "fechas": "15 al 20 de nov.",
         "precio": "$22 USD / noche",
-        "imagen": "imagenes/dptocentro.webp",
+        "imagen": "imagenes/apartamentocentro.jpeg",
         "tipo": "Departamento"
       },
       {
@@ -159,7 +159,7 @@
         "descripcion": "Casa entera en Mendoza, Argentina",
         "fechas": "12 al 20 de dic.",
         "precio": "$500 USD / noche",
-        "imagen": "imagenes/casona mendoza.webp",
+        "imagen": "imagenes/casonamendoza.webp",
         "tipo": "Casa"
       },
       {
@@ -189,7 +189,7 @@
         "descripcion": "Penthouse completo en Buenos Aires, Argentina",
         "fechas": "10 al 15 de dic.",
         "precio": "$100 USD / noche",
-        "imagen": "imagenes/penthouse recoleta.webp",
+        "imagen": "imagenes/penthouserecoleta.webp",
         "tipo": "Departamento"
       },
       {
@@ -199,7 +199,7 @@
         "descripcion": "Casa entera en Bariloche, Argentina",
         "fechas": "20 al 27 de dic.",
         "precio": "$450 USD / noche",
-        "imagen": "imagenes/chalet bariloche.webp",
+        "imagen": "imagenes/chaletbariloche.webp",
         "tipo": "Cabaña"
         
       },
@@ -232,7 +232,7 @@
         "descripcion": "Cabaña entero en Arroyo Abra Vieja, Argentina",
         "fechas": "15 al 17 de nov.",
         "precio": "$34 USD / noche",
-        "imagen": "imagenes/cabaña delta.webp",
+        "imagen": "imagenes/cabañadelta.webp",
         "tipo": "Cabaña"
         },
         {
@@ -252,7 +252,7 @@
         "descripcion": "Alojamiento entero en Tigre, Argentina",
         "fechas": "29 al 30 de nov.",
         "precio": "$150 USD / noche",
-        "imagen": "imagenes/cada deltasobre rio.webp",
+        "imagen": "imagenes/cabañamadreselva.jpeg",
         "tipo": "Cabaña"
         },
         {
@@ -302,7 +302,7 @@
         "descripcion": "Alojamiento entero en La Lonja, Argentina",
         "fechas": "18 al 19 de enero.",
         "precio": "$1,200 USD / noche",
-        "imagen": "imagenes/mansion pilar.webp",
+        "imagen": "imagenes/mansionpilar.webp",
         "tipo": "Casa Quinta"
 
         }
