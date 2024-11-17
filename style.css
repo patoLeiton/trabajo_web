@@ -19,7 +19,7 @@ header {
     align-items: center; 
     justify-content: space-between;
     background-image: url("imagenes/collage.jpg");
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(imagenes/collage.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(imagenes/collage.jpg);
     background-attachment: fixed;
     background-size: cover;
 }
@@ -40,6 +40,7 @@ header {
   
 .btn:hover{
     background-color: #0056b3;
+    color: #f0f0f0;
 }
 
   nav a {
@@ -53,8 +54,10 @@ header {
     position: relative; 
     top: -90px; 
     left: 0px; 
-    color: #ff5400;
-    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ff5400;
+  
   }
 
   .staysnav{
