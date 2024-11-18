@@ -43,6 +43,12 @@ header {
     color: #f0f0f0;
 }
 
+.btn:focus,
+.btn:active {
+  background-color: #0056b3;
+  transition: none;
+}
+
   nav a {
     margin: 0 1rem;
     text-decoration: none;
@@ -378,3 +384,7 @@ nav a {
     transform: scale(0.95); /* Efecto de reducción al hacer clic */
   }
 
+  .footer-info {
+    padding-top: 15px;
+    font-size: 13px;
+  }
