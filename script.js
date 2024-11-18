@@ -146,7 +146,6 @@ document.getElementById('toggleButton').addEventListener('click', function() {
                 .join("")
             : "";
     
-            
           const carouselInner = Array.isArray(item.imagen)
             ? item.imagen
                 .map((img, index) => `
@@ -187,13 +186,13 @@ document.getElementById('toggleButton').addEventListener('click', function() {
             </div>`;
           contenedor.appendChild(carta);
 
-
-
-    
-          carta.addEventListener("click", () => {
-            window.location.href = `detalle.html?id=${item.id}`;
-          });
-        });
+          
+          carta.addEventListener("click", (event) => {
+            // Verificamos si el clic ocurrió dentro de '.card-body' o en '.card-title'
+            if (event.target.closest(".card-body") || event.target.closest(".card-title")) {
+              window.location.href = `detalle.html?id=${item.id}`;
+            }
+          })});
     
         currentIndex = nextIndex;
     
