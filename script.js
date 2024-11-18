@@ -127,18 +127,68 @@ document.getElementById('toggleButton').addEventListener('click', function() {
     
         itemsToRender.forEach(item => {
           const carta = document.createElement("div");
-          carta.classList.add("card");
+          carta.classList.add("card", "col-md-4"); // Clases de Bootstrap para diseño en columnas
           carta.setAttribute("data-id", item.id);
+    
+          // Generar el carrusel con validación de `imagen`
+          const carouselIndicators = Array.isArray(item.imagen)
+            ? item.imagen
+                .map((_, index) => `
+                  <button 
+                    type="button" 
+                    data-bs-target="#carousel-${item.id}" 
+                    data-bs-slide-to="${index}" 
+                    ${index === 0 ? "class='active'" : ""} 
+                    aria-current="${index === 0 ? "true" : "false"}" 
+                    aria-label="Slide ${index + 1}">
+                  </button>
+                `)
+                .join("")
+            : "";
+    
+            
+          const carouselInner = Array.isArray(item.imagen)
+            ? item.imagen
+                .map((img, index) => `
+                  <div class="carousel-item ${index === 0 ? "active" : ""}">
+                    <img src="${img}" class="d-block w-100" alt="Imagen ${index + 1}">
+                  </div>
+                `)
+                .join("")
+            : `
+                <div class="carousel-item active">
+                  <img src="${item.imagen}" class="d-block w-100" alt="Imagen única">
+                </div>
+              `;
+    
           carta.innerHTML = `
-            <img src=${item.imagen} alt="Alojamiento">
-            <div class="card-info">
-              <h3>${item.titulo}</h3>
-              <p>${item.detalles}</p>
-              <p>${item.descripcion}</p>
-              <p>${item.fechas}</p>
-              <p><strong>${item.precio}</strong></p>
+            <div id="carousel-${item.id}" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                ${carouselIndicators}
+              </div>
+              <div class="carousel-inner">
+                ${carouselInner}
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel-${item.id}" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel-${item.id}" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">${item.titulo}</h5>
+              <p class="card-text">${item.detalles}</p>
+              <p class="card-text">${item.descripcion}</p>
+              <p class="card-text">${item.fechas}</p>
+              <p class="card-text"><strong>${item.precio}</strong></p>
             </div>`;
           contenedor.appendChild(carta);
+
+
+
     
           carta.addEventListener("click", () => {
             window.location.href = `detalle.html?id=${item.id}`;

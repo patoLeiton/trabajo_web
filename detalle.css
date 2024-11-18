@@ -58,6 +58,7 @@ body {
     border: none;
     font-size: 1rem;
     padding: 10px 20px;
+    top: -100px;
   }
   
   .btn-primary:hover {
@@ -96,3 +97,10 @@ body {
     box-shadow: 0 3px  #ff5400;
   }
 
+  .carousel-item img {
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px; 
+  }
+  
