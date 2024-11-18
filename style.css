@@ -228,6 +228,10 @@ footer {
     background-color: #f7f7f7;
     color: #666;
 }
+  footer a {
+    justify-content: center;
+    margin-right: 8px;
+  }
 
 body {
     margin: 0;
