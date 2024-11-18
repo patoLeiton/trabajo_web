@@ -23,6 +23,8 @@ $(window).on('scroll', function() {
 });
 });
 
+let flag = false;
+
 document.addEventListener('DOMContentLoaded', () => {
   const titleElement = document.querySelector('.titles'); // Seleccionamos el elemento <h2>
 
@@ -43,76 +45,53 @@ document.getElementById('toggleButton').addEventListener('click', function() {
         navSidebar.classList.toggle('active');
     });
 
-    function filterCards(source = 'top') {
-      // Definir los IDs de los campos según la fuente
+    function filterCards(source = 'top') { 
       const zoneId = source === 'top' ? 'search-zone' : 'sidebar-search-zone';
-      const checkinId = source === 'top' ? 'search-checkin' : 'sidebar-search-checkin';
-      const checkoutId = source === 'top' ? 'search-checkout' : 'sidebar-search-checkout';
-    
-      // Obtener los valores de los filtros
       const zoneFilter = document.getElementById(zoneId).value.toLowerCase();
-      const checkinDate = document.getElementById(checkinId).value;
-      const checkoutDate = document.getElementById(checkoutId).value;
-    
-      // Obtener todas las tarjetas y títulos h2
-      const cards = document.querySelectorAll('.card');
-      const titles = document.querySelectorAll('h2');
-    
-      // Si todos los campos están vacíos, mostramos todas las tarjetas y títulos
-      if (!zoneFilter && !checkinDate && !checkoutDate) {
-        cards.forEach(card => {
-          card.style.display = '';
-        });
-        titles.forEach(title => {
-          title.style.display = '';
-        });
-        return;
-      }
-    
-      // Convertimos las fechas a objetos Date solo si están definidas
-      const checkinDateObj = checkinDate ? new Date(checkinDate) : null;
-      const checkoutDateObj = checkoutDate ? new Date(checkoutDate) : null;
-    
-      // Filtramos las tarjetas
-      cards.forEach(card => {
-        const zone = card.querySelector('h3').textContent.toLowerCase();
-        const dateText = card.querySelector('.card-info p:nth-child(3)').textContent;
-        const [start, end] = dateText.split(' al ').map(dateStr => new Date(dateStr.trim() + ' 2023'));
-    
-        // Verifica cada filtro
-        const matchesZone = !zoneFilter || zone.includes(zoneFilter);
-        const matchesDate = 
-          (!checkinDateObj || (checkinDateObj >= start && checkinDateObj <= end)) && 
-          (!checkoutDateObj || (checkoutDateObj >= start && checkoutDateObj <= end));
-    
-        // Muestra u oculta la tarjeta según los filtros
-        card.style.display = matchesZone && matchesDate ? '' : 'none';
-      });
-    
-      // Verificamos cada título h2 para ver si tiene tarjetas visibles debajo
-      titles.forEach(title => {
-        // Selecciona todas las tarjetas que están después del título h2 hasta el siguiente h2
-        let nextElement = title.nextElementSibling;
-        let hasVisibleCards = false;
-        
-        while (nextElement && nextElement.classList.contains('card')) {
-          if (nextElement.style.display !== 'none') {
-            hasVisibleCards = true;
-            break;
+  
+      // Activar el flag si hay un filtro
+      flag = !!zoneFilter;
+  
+      const mostrarMasContainer = document.getElementById("mostrar-mas-container");
+  
+      if (flag) {
+          // Ocultar el botón "Mostrar más" si hay un filtro
+          if (mostrarMasContainer) {
+              mostrarMasContainer.style.display = "none";
           }
-          nextElement = nextElement.nextElementSibling;
-        }
-    
-        // Muestra o oculta el título según si tiene tarjetas visibles
-        title.style.display = hasVisibleCards ? '' : 'none';
-      });
-    }
+  
+          // Filtrar los datos desde el JSON completo
+          fetch("cards.json")
+              .then(resp => resp.json())
+              .then(data => {
+                  const filteredData = data.filter(item =>
+                      !zoneFilter || item.titulo.toLowerCase().includes(zoneFilter)
+                  );
+                  rendercard(filteredData); // Renderizar las tarjetas filtradas
+              });
+      } else {
+          // Mostrar el botón si no hay filtro activo
+          if (mostrarMasContainer) {
+              mostrarMasContainer.style.display = "block";
+          }
+  
+          // Filtrar las tarjetas renderizadas
+          const cards = document.querySelectorAll('.card');
+          cards.forEach(card => {
+              const zone = card.querySelector('.card-title').textContent.toLowerCase();
+              card.style.display = !zoneFilter || zone.includes(zoneFilter) ? '' : 'none';
+          });
+      }
+  }
+  
+  
+
     
     fetch("cards.json").then(resp=>resp.json()).then(dato=>{
       rendercard(dato);
     })
 
-    function rendercard(source, filterType = null) {
+  function rendercard(source, filterType = null) {
       const contenedor = document.getElementById("cartas");
       const maxIncrement = 10;
       let currentIndex = 0;
@@ -195,10 +174,11 @@ document.getElementById('toggleButton').addEventListener('click', function() {
           })});
     
         currentIndex = nextIndex;
-    
-        if (currentIndex >= filteredSource.length) {
-          document.getElementById("mostrar-mas-container").style.display = "none";
+        const mostrarMasContainer = document.getElementById("mostrar-mas-container");
+        if (currentIndex >= filteredSource.length && mostrarMasContainer) {
+            mostrarMasContainer.style.display = "none";
         }
+
       }
     
       contenedor.innerHTML = "";
@@ -216,40 +196,8 @@ document.getElementById('toggleButton').addEventListener('click', function() {
         contenedor.parentElement.appendChild(explorarDiv);
     
         document.getElementById("mostrar-mas").addEventListener("click", renderNextBatch);
-      } else {
-        explorarDiv.style.display = "block";
       }
-    }
-    
-        currentIndex = nextIndex; // Actualizar el índice actual
-    
-        // Mostrar u ocultar el botón según si quedan más elementos
-        if (currentIndex >= source.length) {
-          document.getElementById("mostrar-mas-container").style.display = "none";
-        }
-      
-    
-      // Limpiar el contenedor y renderizar los primeros elementos
-      contenedor.innerHTML = ""; 
-      currentIndex = 0;
-      renderNextBatch();
-    
-      // Crear el contenedor del botón "Mostrar más" si no existe
-      let explorarDiv = document.getElementById("mostrar-mas-container");
-      if (!explorarDiv) {
-        explorarDiv = document.createElement("div");
-        explorarDiv.id = "mostrar-mas-container";
-        explorarDiv.classList.add("explorar-mas");
-        explorarDiv.innerHTML = `
-          <p>Seguir explorando alojamientos</p>
-          <button id="mostrar-mas">Mostrar más</button>`;
-        contenedor.parentElement.appendChild(explorarDiv);
-    
-        // Agregar funcionalidad al botón "Mostrar más"
-        document.getElementById("mostrar-mas").addEventListener("click", renderNextBatch);
-      } else {
-        explorarDiv.style.display = "block"; // Asegurarse de que sea visible
-      }
+  }
     
       function filterByType(type) {
         fetch("cards.json")
