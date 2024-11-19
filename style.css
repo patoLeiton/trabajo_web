@@ -43,11 +43,7 @@ header {
     color: #f0f0f0;
 }
 
-.btn:focus,
-.btn:active {
-  background-color: #0056b3;
-  transition: none;
-}
+
 
   nav a {
     margin: 0 1rem;

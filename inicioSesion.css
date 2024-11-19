@@ -96,3 +96,55 @@ body {
     background-color: #f0f0f0;
     color: #007bff;
   }
+
+  /* Estilos para pantallas pequeñas, como teléfonos */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .login-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-icon img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .btn-email {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .or-divider, .terms {
+    font-size: 12px;
+  }
+
+  .back-arrow {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* Estilos para pantallas medianas, como tabletas */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .login-container {
+    width: 70%;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .btn-email {
+    font-size: 15px;
+  }
+}
