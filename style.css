@@ -30,7 +30,20 @@ header {
     justify-content: space-between;
     width: 100%;
 }
-    
+   
+.botonesextra{
+  padding: 0.5rem 1rem;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  margin:10px;
+ 
+}
+
 .logo img {
     height: 30px;
     position: relative; 
